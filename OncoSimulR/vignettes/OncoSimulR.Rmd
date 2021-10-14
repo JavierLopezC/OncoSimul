@@ -12311,7 +12311,7 @@ evaluation, meaning this will give a TRUE or FALSE result.
 
 Here we have an example of how the user can specify a list of interventions:
 
-````{r interventionListExample}
+```{r interventionListExample}
 interventions <- list(
     list(ID           = "i2",
         Trigger       = "(N > 1e6) & (T > 100)",
@@ -12325,7 +12325,7 @@ interventions <- list(
         Periodicity   = 10,
         Repetitions   = 0
     ),
-    list(ID           = "i3",
+    list(ID           = "i3", 
         Trigger       = "(T > 1) & (T < 200)",
         WhatHappens   = "n_A = n_A * 0,3 / n_C",
         Repetitions   = Inf,  
